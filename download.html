@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Mod | DAUDI GARAGE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f1f5f9; text-align: center; }
+    .container { max-width: 600px; margin: 50px auto; padding: 20px; }
+    .dl-card { background: #1e293b; padding: 40px; border-radius: 20px; border: 1px solid #00ff88; }
+    #timer { font-size: 40px; color: #00ff88; font-weight: bold; margin: 20px 0; }
+    .dl-btn { 
+        display: none; 
+        background: #00ff88; 
+        color: #020617; 
+        padding: 15px 30px; 
+        border-radius: 10px; 
+        text-decoration: none; 
+        font-weight: bold; 
+        font-size: 18px;
+        animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="dl-card">
+    <h1 style="color: #fff;">DAUDI <span style="color: #00ff88;">GARAGE</span></h1>
+    <p>Tafadhali subiri kidogo, faili lako linaandaliwa...</p>
+    
+    <div id="timer">10</div>
+    
+    <p id="msg">Usiondoke kwenye ukurasa huu</p>
+
+    <a href="MOD_FILE_YAKO.zip" id="downloadBtn" class="dl-btn">DOWNLOAD NOW</a>
+  </div>
+</div>
+
+<script>
+    let seconds = 10;
+    const timerDisplay = document.getElementById('timer');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const msg = document.getElementById('msg');
+
+    const countdown = setInterval(() => {
+        seconds--;
+        timerDisplay.textContent = seconds;
+        
+        if (seconds <= 0) {
+            clearInterval(countdown);
+            timerDisplay.style.display = 'none';
+            msg.textContent = 'Tayari! Bonyeza kitufe hapo chini:';
+            downloadBtn.style.display = 'inline-block';
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>

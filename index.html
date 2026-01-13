@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <title>DAUDI GARAGE | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    :root { --neon-green: #00ff88; --dark-bg: #020617; --card-bg: #1e293b; }
+    
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--dark-bg); color: #f1f5f9; overflow-x: hidden; }
+    
+    /* Navigation yenye Glow */
+    nav { display: flex; justify-content: center; gap: 15px; background: rgba(2, 6, 23, 0.95); padding: 15px; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--neon-green); backdrop-filter: blur(10px); }
+    nav a { color: #ffffff; text-decoration: none; font-weight: bold; font-size: 13px; padding: 8px 15px; border-radius: 8px; transition: 0.3s; text-transform: uppercase; }
+    nav a:hover { background: var(--neon-green); color: var(--dark-bg); box-shadow: 0 0 15px var(--neon-green); }
+
+    /* Container */
+    .container { max-width: 600px; margin: auto; padding: 40px 20px; min-height: 50vh; }
+
+    /* Hero Card Animation */
+    .card { 
+      background: var(--card-bg); 
+      padding: 40px 25px; 
+      border-radius: 30px; 
+      text-align: center; 
+      border: 1px solid #334155; 
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      animation: slideUp 0.8s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Animated Button */
+    .btn { 
+      display: inline-block; 
+      width: 100%;
+      box-sizing: border-box;
+      padding: 18px; 
+      border-radius: 15px; 
+      text-decoration: none; 
+      font-weight: 900; 
+      background: var(--neon-green); 
+      color: var(--dark-bg); 
+      margin-top: 25px; 
+      transition: 0.4s; 
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    }
+    .btn:hover { transform: scale(1.03); box-shadow: 0 0 30px var(--neon-green); }
+
+    /* Social Icons Glow */
+    .social-btn {
+      color: white; 
+      text-decoration: none; 
+      margin: 5px; 
+      font-size: 13px; 
+      border: 1px solid #334155; 
+      padding: 10px 20px; 
+      border-radius: 50px;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .social-btn:hover { border-color: var(--neon-green); color: var(--neon-green); box-shadow: 0 0 10px var(--neon-green); }
+
+    footer { background: #010409; padding: 50px 20px; text-align: center; border-top: 1px solid #1e293b; }
+  </style>
+</head>
+<body>
+
+<header style="padding: 60px 20px; text-align: center; background: radial-gradient(circle at center, #1e293b 0%, #020617 100%);">
+  <div style="display: inline-block; border: 2px solid var(--neon-green); padding: 20px; border-radius: 25px; background: rgba(0,0,0,0.3); backdrop-filter: blur(5px);">
+    <img src="favicon.png" alt="Logo" style="width: 60px; height: 60px; margin-bottom: 10px; border-radius: 50%;">
+    <h1 style="margin: 0; color: #fff; font-size: 35px; font-weight: 900; text-transform: uppercase; letter-spacing: -1px;">DAUDI<span style="color: var(--neon-green);">GARAGE</span></h1>
+    <p style="margin: 5px 0 0; color: var(--neon-green); font-size: 10px; letter-spacing: 4px; font-weight: bold; text-transform: uppercase;">The Home of Tanzanian Mods</p>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html" style="background: rgba(0,255,136,0.1); color: var(--neon-green);">Home</a>
+  <a href="mods.html">Mods</a>
+  <a href="skin.html">Skins</a>
+  <a href="vip.html">VIP</a>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h2 style="color: var(--neon-green); margin-top: 0; font-size: 24px;">🎮 GAME ON, TANZANIA!</h2>
+    <p style="color: #94a3b8; font-size: 16px; line-height: 1.6;">Karibu kwenye makao makuu ya ubunifu. Tunageuza ndoto zako za barabarani kuwa kweli kwa Mods na Skins kali za <b>ETS2</b> na <b>BUSSID</b>.</p>
+    
+    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+        <a href="mods.html" class="btn">ANGALIA MODS ZOTE</a>
+        <a href="vip.html" style="color: #94a3b8; text-decoration: none; font-size: 13px; font-weight: bold;">Jiunge na VIP Members 💎</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+    <div style="margin-bottom: 30px;">
+        <a href="about.html" class="social-btn">ABOUT</a>
+        <a href="contact.html" class="social-btn">CONTACT</a>
+        <a href="terms.html" class="social-btn">TERMS</a>
+    </div>
+    <div style="margin-bottom: 30px;">
+        <p style="color: var(--neon-green); font-size: 12px; font-weight: bold; margin-bottom: 15px; letter-spacing: 2px;">SOCIAL MEDIA</p>
+        <a href="https://youtube.com/@DAUDIGARAGE" class="social-btn" style="background: #ff000022;">YOUTUBE</a>
+        <a href="https://tiktok.com/@DAUDIGARAGE" class="social-btn" style="background: #ffffff11;">TIKTOK</a>
+    </div>
+    <p style="color: #475569; font-size: 11px;">© 2026 DAUDI GARAGE. <br> Built for Tanzanian Gamers 🇹🇿</p>
+</footer>
+
+</body>
+</html>
